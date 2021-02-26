@@ -1,0 +1,238 @@
+:root {
+    --dot: 15px;
+    --pag: 10px;
+}
+
+body {
+    background-color: #a3a3a3;
+    background-image: url(./images/pattern.png);
+    background-size: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.bookcover {
+    background-color: #BF6F41;
+    border-radius: 9px;
+    border: 1px solid #738186;
+    width: 960px;
+    height: 660px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.bookdot {
+    position: absolute;
+    top: var(--dot);
+    left: var(--dot);
+    bottom: var(--dot);
+    right: var(--dot);
+    width: auto;
+    height: auto;
+    border: 1px dashed white;
+    border-radius: 9px;
+}
+
+.page {
+    position: absolute;
+    top: var(--pag);
+    left: var(--pag);
+    bottom: var(--pag);
+    right: var(--pag);
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 250, 245);
+    border-radius: 9px;
+    display: flex;
+    padding: 15px;
+}
+
+.profile-container {
+    flex: 0.4;
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-container {
+    flex: 0.15;
+}
+
+.header {
+    flex: 0.1;
+}
+
+.box {
+    flex: 3;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.content-title {
+    padding: 6px 0;
+    font-size: 0.8rem;
+    font-weight: 800;
+    display: flex;
+    align-items: baseline;
+  }
+
+.content-title-name {
+    flex: 1;
+    letter-spacing: 0.5px;
+}
+
+.content-title-url {
+    flex: 1;
+    text-align: end;
+}
+
+.profile-title {
+    text-align: center;
+    padding: 6px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+
+  .color-red {
+    color: red;
+}
+
+.color-blue {
+    color: steelblue;
+}
+
+.profile {
+    width: 10rem;
+    margin: 2rem auto;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-img {
+    flex: none;
+}
+
+.profile-img > img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.profile-msg {
+    flex: 1;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+
+.profile-name {
+    flex: 0;
+    margin-top: 80%;
+    color: #BF6F41;
+}
+
+.content {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.profile-dropdown {
+    flex: 0;
+    border: 1px solid #BFA38A;
+    border-radius: 0.2rem;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 4.5px solid transparent;
+    border-right: 4.5px solid transparent;
+    border-top: 5px solid #BFA38A;
+}
+  
+.dropdown-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-title {
+    color: rgb(70, 70, 70);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.profile-dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+.dropdown-content > a {
+    display: block;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 6px;
+    color: gray;
+    text-decoration: none;
+}
+
+.dropdown-content > a:hover {
+    background-color: #f1f1f1;
+    color: rgb(70, 70, 70);
+}
+
+.menu-content {
+    margin-top: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-content > a {
+    flex: 1;
+    justify-content: center;
+    display: block;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0.4rem 0 0.4rem 0;
+    padding: 0.4rem;
+    background-color: #BF6F41;
+    border: 1px solid #BFA38A;
+    border-bottom-right-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+
+.menu-content > a:hover {
+    background-color: #F2B56B;
+    border: 1px solid white;
+}
+
+.menu-content > a:active {
+    background-color: #BF9B7A;
+}

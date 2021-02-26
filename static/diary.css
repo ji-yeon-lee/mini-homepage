@@ -1,0 +1,114 @@
+.date-box {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    right: 0.8rem;
+    bottom: 0.8rem;
+    height: 3rem;
+    background-color: rgb(255, 250, 245);
+    border: 1px solid #BFA38A;
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.diary-scroll-box {
+    position: absolute;
+    margin-top: 3.9rem;
+    top: 0.8rem;
+    left: 0.8rem;
+    right: 0.8rem;
+    bottom: 0.8rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.today {
+    flex: 0 0 3rem;
+    margin: 0 1rem;
+    text-align: center;
+    justify-content: center;
+    color: #BF9B7A;
+    font-family: 'Squada One', cursive;
+}
+
+.date-list {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.date {
+    flex: 0 0 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    color: dimgray;
+    font-family: 'Share Tech Mono';
+}
+
+.date > a {
+    text-decoration: none;
+    color: dimgray;
+}
+
+.diary-content {
+    flex: none;
+    padding: 2rem;
+    margin: 0.9rem;
+    background-color: rgb(255, 250, 245);
+    border: 1px solid #BF9B7A;
+    border-radius: 0.2rem;
+}
+
+.diary-date {
+    margin-bottom: 1rem;
+    color: #BF9B7A;
+    font-family: 'Squada One', cursive;
+}
+
+.diary-date > span {
+    font-family: 'Jua', sans-serif;
+    font-size: 14px;
+}
+
+.diary-txt {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    color: #402F2D;
+}
+
+.diary-button {
+    flex: none;
+    padding: 0.8rem 0.6rem;
+    margin: auto;
+    font-weight: bold;
+    color: white;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: 800ms ease all;
+}
+
+.diary-button:hover {
+    background-color: #F2B56B;
+    padding: 0.8rem 1.8rem;
+}
+
+.diary-button:focus {
+    outline: none;
+}
+
+.icon {
+    margin-right: 0.4rem;
+    color: white;
+}
+
+#secret-box {
+    display: none;
+  }
